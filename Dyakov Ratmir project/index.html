@@ -2,36 +2,54 @@
 <html>
 <head>
   <title>Выбор языка программирования</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename = 'styles.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'main.css')}}">
 </head>
 <body>
-  <h1>Выберите язык программирования</h1>
+  <header>
+    <h1 style="text-align: center;">Выберите язык программирования</h1>
+  </header>
   
-  <ul>
-    <li>
-      <a href="/python" style="text-decoration: none;">
-        <h2>Python</h2>
-        <p>Год: 1991</p>
-        <p>Создатель: Гвидо ван Россум</p>
-        <p>Описание: Python - высокоуровневый язык программирования, известный своей простотой и читаемостью кода.</p>
-      </a>
-    </li>
-    <li>
-      <a href="/javascript" style="text-decoration: none;">
-        <h2>JavaScript</h2>
-        <p>Год: 1995</p>
-        <p>Создатель: Брендан Айк</p>
-        <p>Описание: JavaScript - язык программирования, который широко используется для создания интерактивных веб-страниц.</p>
-      </a>
-    </li>
-    <li>
-      <a href="/java" style="text-decoration: none;">
-        <h2>Java</h2>
-        <p>Год: 1995</p>
-        <p>Создатель: Джеймс Гослинг</p>
-        <p>Описание: Java - объектно-ориентированный язык программирования, популярный в разработке приложений для различных платформ.</p>
-      </a>
-    </li>
-  </ul>
+  <div class="language-container">
+    
+    
+    <a href="/javascript">
+      <div class="language-card">
+        <img src="{{ url_for('static', filename = 'javascript_logo.png')}}" style="width: 80px; height: 100px;" alt="JavaScript Logo" class="language-logo">
+        <div class="language-info">
+          <h2>JavaScript</h2>
+          <p>Год: 1995</p>
+          <p>Создатель: Брендан Айк</p>
+          <p>Описание: JavaScript - язык программирования, который широко используется для создания интерактивных веб-страниц.</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="/python">
+      <div class="language-card" style="height: 314.91px;">
+        <img src="{{ url_for('static', filename = 'python_logo.png')}}"  alt="Python Logo" class="language-logo">
+        <div class="language-info">
+          <h2>Python</h2>
+          <p>Год: 1991</p>
+          <p>Создатель: Гвидо ван Россум</p>
+          <p>Описание: Python - высокоуровневый язык программирования, известный своей простотой и читаемостью кода.</p>
+        </div>
+      </div>
+    </a>
+    
+    <a href="/java">
+      <div class="language-card">
+        <img src="{{ url_for('static', filename = 'java_logo.png')}}" style="width: 54px; height: 100px;" ="Java Logo" class="language-logo">
+        <div class="language-info">
+          <h2>Java</h2>
+          <p>Год: 1995</p>
+          <p>Создатель: Джеймс Гослинг</p>
+          <p>Описание: Java - объектно-ориентированный язык программирования, популярный в разработке приложений для различных платформ.</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <footer>
+    <p>&copy; 2023 Ваша компания. Все права защищены.</p>
+  </footer>
 </body>
 </html>
