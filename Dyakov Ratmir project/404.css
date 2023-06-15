@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 72px;
+    color: #ff3860;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #ff3860;
+    color: #fff;
+    font-size: 20px;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #d22f52;
+  }
+  
+  
