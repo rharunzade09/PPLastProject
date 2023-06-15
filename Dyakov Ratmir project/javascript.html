@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>О JavaScript</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'styles.css')}}">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="/">Главная</a></li>
+      <li><a href="/python">Python</a></li>
+      <li><a href="/javascript">JavaScript</a></li>
+      <li><a href="/java">Java</a></li>
+    </ul>
+  </nav>
+
+  <div class="javascript-page">
+    <img src="{{ url_for('static', filename = 'javascript_logo.png')}}" alt="JavaScript Logo">
+    <h2>JavaScript</h2>
+    <p>Год: 1995</p>
+    <p>Создатель: Брендан Айк</p>
+    <p>Описание: JavaScript - язык программирования, который широко используется для создания интерактивных веб-страниц.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>О Python</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'styles.css')}}">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="/">Главная</a></li>
+      <li><a href="/python">Python</a></li>
+      <li><a href="/javascript">JavaScript</a></li>
+      <li><a href="/java">Java</a></li>
+    </ul>
+  </nav>
+
+  <div class="python-page">
+    <img src="{{ url_for('static', filename = 'python_logo.png')}}" alt="Python Logo">
+    <h2>Python</h2>
+    <p>Год: 1991</p>
+    <p>Создатель: Гвидо ван Россум</p>
+    <p>Описание: Python - высокоуровневый язык программирования, известный своей простотой и читаемостью кода.</p>
+  </div>
+</body>
+</html>
